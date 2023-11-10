@@ -21,10 +21,17 @@ window.addEventListener('scroll', _.throttle(function(){
   console.log("scroll!!");
   if(window.scrollY > 500) {
     // badge hide
-    badgeEl.style.display = "none";
+    // gsap.to(요소, 지속시간, 옵션);
+    gsap.to(badgeEl, 0.6, {
+      opacity: 0,
+      display: 'none'
+    })
   } else {
     // badge show
-    badgeEl.style.display = "block";
+    gsap.to(badgeEl, 0.6, {
+      opacity: 1,
+      display: 'block'
+    })
   }
 }, 300));
 //_.throttle(실행할 함수, 시간)
