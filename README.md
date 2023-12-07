@@ -1,4 +1,4 @@
-# copy_of_Starbucks
+# Starbucks 따라하기
 
 오픈 그래프(The Open Graph protocol)
 
